@@ -14,7 +14,7 @@ func timeConversion(s: String) -> String {
     stringed.removeLast(2)
     // Store the integer value of hours and minutes for calculations
     let hours: Int = Int(s.prefix(2))!
-    let min = stringed[stringed.firstIndex(of: ":")!..<stringed.endIndex] // *** Look down
+    let min = stringed[stringed.firstIndex(of: ":")! ..< stringed.endIndex] // *** Look down
     
     if s.hasSuffix("AM") {
         // If it's AM, we just need the remainder of dividing by 12, and format that into a String.
